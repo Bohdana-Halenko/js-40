@@ -88,7 +88,16 @@
 
 // ----------------------------------------------------------------
 
-let numsA = [1, 45, 48];
-let numsB = numsA;
-numsA.push(1278);
-console.log(numsA); // [1, 45, 48]
+// let numsA = [1, 45, 48];
+// let numsB = numsA;
+// numsA.push(1278);
+// console.log(numsA); // [1, 45, 48]
+
+
+// const arrayOne = [1, 2, 3, 4, 5, 6, 7, 8];
+// const arrayTwo = ["one", "two"];
+// arrayOne.concat(arrayTwo);
+// const allNumbers = [...arrayOne, ...arrayTwo];
+// console.log(`allNumbers`, allNumbers);
+
+
