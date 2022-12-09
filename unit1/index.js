@@ -83,7 +83,7 @@
 
     let name = "Иван";
     let age = 25;
-    let company = "ITVDN";
+    let company = "IT";
     let position = "Frontend Developer";
 
         // инициализируйте переменную message
@@ -180,3 +180,25 @@ if ( totalSpent < 5000){
   return discount;
 }
 getDiscount();
+
+
+
+        //Внесите изменения в сценарий. Сделайте, чтобы значение для радиуса и высоты вводил пользователь.
+        //При выводе значений используйте форматированный вывод, например, "объем цилиндра с высотой X и радиусом Y = Z"
+
+        // alert("Вычисление объема цилиндра.");
+        // let V;
+        // const Pi = 3.1415926535; 
+        // let r = Number(prompt('Радиус цилиндра.')); 
+        // let h = Number(prompt('Высота цилиндра.')); 
+
+        // V = Pi * r * r * h;
+        // console.log(alert(`объем цилиндра с высотой ${h} и радиусом ${r} = ${V}`));
+ 
+        
+        
+let inputX = '10';
+let inputY = '20';
+let sum = inputX * inputY;
+console.log(sum);
+
