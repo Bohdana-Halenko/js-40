@@ -99,3 +99,84 @@
 //04.2
 
 //04.3
+function checkPassword(password) {
+  const ADMIN_PASSWORD = 'jqueryismyjam';
+  let message;
+
+  if (password === null) { 
+    message =  'Canceled by user!';
+  } else if (password === ADMIN_PASSWORD) {
+    message = 'Welcome!';
+  } else {
+    message = 'Access denied, wrong password!';
+  }
+
+  return message;
+};
+checkPassword();
+
+
+
+
+
+function checkStorage(available, ordered) {
+  let message;
+
+if (ordered===0){
+  message = "There are no products in the order!"
+} else if (ordered > available){
+  message= "Your order is too large, there are not enough items in stock!"
+} else {
+  message= "The order is accepted, our manager will contact you"
+}
+
+  return message;
+}
+checkStorage();
+
+
+
+
+function isNumberInRange(start, end, number) {
+  const isInRange = number >= start && number <= end; 
+  return isInRange;
+}
+isNumberInRange();
+
+
+function checkIfCanAccessContent(subType) {
+  const canAccessContent = subType === "pro" || subType === "vip"; 
+  return canAccessContent;
+}
+checkIfCanAccessContent();
+
+
+
+function isNumberNotInRange(start, end, number) {
+  const isInRange = number >= start && number <= end;
+  const isNotInRange = !isInRange; // Change this line
+  return isNotInRange;
+}
+isNumberNotInRange();
+
+
+function getDiscount(totalSpent) {
+  const BASE_DISCOUNT = 0;
+  const BRONZE_DISCOUNT = 0.02;
+  const SILVER_DISCOUNT = 0.05;
+  const GOLD_DISCOUNT = 0.1;
+  let discount;
+  
+if ( totalSpent < 5000){
+  discount = BASE_DISCOUNT
+} else if (totalSpent >= 5000 && totalSpent<20000 ){
+  discount= BRONZE_DISCOUNT
+} else if ( totalSpent >= 20000 && totalSpent <50000){
+  discount=SILVER_DISCOUNT
+}
+  else{
+    discount = GOLD_DISCOUNT
+  }
+  return discount;
+}
+getDiscount();
