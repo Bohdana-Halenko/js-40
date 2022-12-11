@@ -226,3 +226,42 @@
 //     alert("Доступ запрещен");
 //   }
 
+
+
+function checkStorage(available, ordered) {
+  let message;
+
+message = ordered > available ? "Not enough goods in stock!" : "The order is accepted, our manager will contact you";
+  return message;
+}
+
+
+
+function checkPassword(password) {
+  const ADMIN_PASSWORD = "jqueryismyjam";
+  let message;
+message = password === ADMIN_PASSWORD ? "Access is allowed" : "Access denied, wrong password!";
+  return message;
+}
+
+
+
+function getSubscriptionPrice(type) {
+  let price;
+
+ switch (type) { 
+    case "starter": 
+      price = 0; 
+      break;
+
+    case "professional": 
+      price = 20; 
+      break;
+
+    case "organization": 
+      price = 50; 
+      break;
+  }
+
+  return price;
+}
