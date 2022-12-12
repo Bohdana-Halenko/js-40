@@ -228,105 +228,163 @@
 
 
 
-function checkStorage(available, ordered) {
-  let message;
+// function checkStorage(available, ordered) {
+//   let message;
 
-message = ordered > available ? "Not enough goods in stock!" : "The order is accepted, our manager will contact you";
-  return message;
+// message = ordered > available ? "Not enough goods in stock!" : "The order is accepted, our manager will contact you";
+//   return message;
+// }
+
+
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+// message = password === ADMIN_PASSWORD ? "Access is allowed" : "Access denied, wrong password!";
+//   return message;
+// }
+
+
+
+// function getSubscriptionPrice(type) {
+//   let price;
+
+//  switch (type) { 
+//     case "starter": 
+//       price = 0; 
+//       break;
+
+//     case "professional": 
+//       price = 20; 
+//       break;
+
+//     case "organization": 
+//       price = 50; 
+//       break;
+//   }
+//   return price;
+// }
+
+
+
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+
+// switch (password) {
+//   case null:
+//     message = "Canceled by user!";
+//     break;
+
+//   case ADMIN_PASSWORD:
+//     message = "Welcome!";
+//     break;
+
+//   default:
+//     message = "Access denied, wrong password!";
+// }
+
+//   return message;
+// }
+
+
+
+
+
+// function getShippingCost(country) {
+//   let message;
+// switch (country) {
+//   case "China":
+//     message = "Shipping to China will cost 100 credits";
+//     break;
+
+//   case "Chile":
+//     message = "Shipping to Chile will cost 250 credits";
+//     break;
+
+//   case "Australia":
+//     message = "Shipping to Australia will cost 170 credits";
+//     break;
+
+//   case "Jamaica":
+//     message = "Shipping to Jamaica will cost 120 credits";
+//     break;
+
+//   default:
+//     message = "Sorry, there is no delivery to your country";
+// }
+//   return message;
+// }
+
+
+
+
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`;
+//   return message;
+// }
+
+
+// const courseTopic = "JavaScript essentials";
+// const courseTopicLength = courseTopic.length;  //21
+// const firstElement = courseTopic[0];  //J
+// const lastElement = courseTopic[courseTopic.length - 1];   //s
+
+
+
+//while
+
+// let i = 0;
+// while (i < 8) {
+//   i += 1;
+//   console.log("Итерация:", i)
+// }
+// console.log("Конец цикла")
+
+
+// do ... while
+
+// let i = 0;
+// do {
+//   i += 1;
+//   console.log("Итерация:", i)
+// }
+// while (i < 10);
+// console.log("Конец цикла")
+
+
+// let value1 = prompt("Введите значение больше 5");
+// while (value1 <= 5) {
+//   value1= prompt("Введите значение больше 5");
+// }
+// alert("Вы ввели " + value1);
+
+
+
+
+// let value2 = 0;
+// do {
+//   value2 = prompt("Введите значение больше 5");
+// }
+// while (value2 <= 5);
+// alert("Вы ввели " + value2);
+
+
+
+
+//for
+
+// for (let i = 2; i < 10; i += 1) {
+//   console.log(i);
+// }
+
+
+
+const target = 20;
+let sum = 0;
+
+for (let i = 0; i <= target; i += 1){
+  sum += i;
 }
-
-
-
-function checkPassword(password) {
-  const ADMIN_PASSWORD = "jqueryismyjam";
-  let message;
-message = password === ADMIN_PASSWORD ? "Access is allowed" : "Access denied, wrong password!";
-  return message;
-}
-
-
-
-function getSubscriptionPrice(type) {
-  let price;
-
- switch (type) { 
-    case "starter": 
-      price = 0; 
-      break;
-
-    case "professional": 
-      price = 20; 
-      break;
-
-    case "organization": 
-      price = 50; 
-      break;
-  }
-  return price;
-}
-
-
-
-
-function checkPassword(password) {
-  const ADMIN_PASSWORD = "jqueryismyjam";
-  let message;
-
-switch (password) {
-  case null:
-    message = "Canceled by user!";
-    break;
-
-  case ADMIN_PASSWORD:
-    message = "Welcome!";
-    break;
-
-  default:
-    message = "Access denied, wrong password!";
-}
-
-  return message;
-}
-
-
-
-
-
-function getShippingCost(country) {
-  let message;
-switch (country) {
-  case "China":
-    message = "Shipping to China will cost 100 credits";
-    break;
-
-  case "Chile":
-    message = "Shipping to Chile will cost 250 credits";
-    break;
-
-  case "Australia":
-    message = "Shipping to Australia will cost 170 credits";
-    break;
-
-  case "Jamaica":
-    message = "Shipping to Jamaica will cost 120 credits";
-    break;
-
-  default:
-    message = "Sorry, there is no delivery to your country";
-}
-  return message;
-}
-
-
-
-
-function getNameLength(name) {
-  const message = `Name ${name} is ${name.length} characters long`;
-  return message;
-}
-
-
-const courseTopic = "JavaScript essentials";
-const courseTopicLength = courseTopic.length;  //21
-const firstElement = courseTopic[0];  //J
-const lastElement = courseTopic[courseTopic.length - 1];   //s
+console.log(sum);
