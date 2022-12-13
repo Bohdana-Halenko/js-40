@@ -380,11 +380,207 @@
 // }
 
 
+//Сумма всех чисел 
+// const target = 20;
+// let sum = 0;
 
-const target = 20;
-let sum = 0;
+// for (let i = 0; i <= target; i += 1){
+//   sum += i;
+// }
+// console.log(sum);
 
-for (let i = 0; i <= target; i += 1){
-  sum += i;
-}
-console.log(sum);
+
+
+
+
+//Значение последнего элемента 
+// const clients = ["Mango", "Poly", "Ajax", "Alex", "Ross", "Poll"];
+// const lastElement = clients.length - 1;
+// console.log(lastElement);
+// console.log(clients[lastElement]);
+
+
+// clients[0] = "Olli";
+// console.log(clients)
+
+
+
+
+// const clients = ["Mango", "Ajax", "Poly"];
+// for (let i = 0; i < clients.length; i += 1) {
+//   console.log(clients[i]);
+// }
+
+
+// const clients = ["Mango", "Ajax", "Poly"];
+// for (const client of clients) {
+//   console.log(client);
+// }
+//Mango
+//Ajax
+//Poly
+
+
+// const string = "javascript";
+// for (const character of string) {
+//   console.log(character);
+// }
+//j
+//a
+//v
+//a
+//s
+//c
+//r
+//i
+//p
+//t
+
+
+
+//Поиск имени клиента в массиве
+// const clients = ["Mango", "Poly", "Ajax", "Alex", "Ross", "Poll"];
+// const clientNameToFind = "Ross";
+// let message;
+// for (const client of clients) {
+//   // На каждой итерации будем проверять совпадает ли элемент массива с
+//   // именем клиента. Если совпадает то мы записываем в message сообщение
+//   // об успехе и делаем break чтобы не искать дальше
+//   if (client === clientNameToFind) {
+//     message = "Клиент с таким именем есть в базе данных!";
+//     break;
+//   }
+
+//   // Если они не совпадают то запишем в message сообщение об отсутствии имени
+//   message = "Клиента с таким именем нету в базе данных!";
+// }
+
+// console.log(message); // "Клиент с таким именем есть в базе данных!"
+
+
+
+
+//Числа больше 30
+// const numbers = [1, 5, 3, 8, 20, 44, 23, 13, 2, 4, 90, 34, 67, 7, 11, 82];
+// const threshold = 30;
+// for (let i = 0; i < numbers.length - 1; i += 1) {
+//   if (numbers[i] < threshold) {
+//     continue
+//   }
+//   console.log(`Число больше чем ${threshold}: ${numbers[i]}`);
+// }
+
+
+//9.01
+//FOR
+//Напишите сценарий, который найдет минимальное, максимальное значения массива, а также выведет сумму всех элементов массива.
+// const values = [10, 20, 4, 6, 11, 9, 125, 1, 8, 0, 3]; 
+// let max = Number.MIN_VALUE;
+// for (let i = 0; i < values.length; i += 1){
+//   const element = values[i];
+//   if (element > max) {
+//     max = element;
+//   }
+// }
+// console.log("Максимальное значение - ", max) // 125
+  
+
+// const numbers = [10, 20, 4, 6, 11, 9, 125, -1, 8, 3]; 
+// let min = Number.MAX_VALUE;
+// for (let i=0; i < numbers.length; i += 1){
+//   const element = numbers[i];
+//   if (element < min) {
+//     min = element;
+//   }
+// }
+//   console.log("Минимальное значение - ", min) //-1
+
+
+// const numbers = [10, 20, 4, 6, 11, 9, 125, -1, 8, 3]; 
+// let sum = 0;
+// for (let i=0; i < numbers.length; i += 1){
+//   const element = numbers[i];
+//  sum +=element
+// }
+//   console.log("Сумма чисел в массиве - ", sum) // 195
+
+
+
+//9.02
+//FOR ... OF
+// Поменяйте сценарий таким образом, чтобы обход данных массива происходил с помощью цикла for...of
+// const values = [10, 20, 4, 6, 11, 9, 125, 1, 8, 0, 3]; 
+// let max = Number.MIN_VALUE;
+// for (value of values){
+//   if (value > max) {
+//     max = value;
+//   }
+// }
+// console.log("Максимальное значение - ", max) // 125
+
+
+// const numbers = [10, 20, 4, 6, 11, 9, 125, -1, 8, 3]; 
+// let min = Number.MAX_VALUE;
+// for (number of numbers){
+//   if (number < min) {
+//     min = number;
+//   }
+// }
+//   console.log("Минимальное значение - ", min) //-1
+    
+
+// const numbers = [10, 20, 4, 6, 11, 9, 125, -1, 8, 3]; 
+// let sum = 0;
+// for (number of numbers){
+//  sum +=number
+// }
+// console.log("Сумма чисел в массиве - ", sum) // 195
+
+
+
+//9.03
+//Напишите сценарий, который найдет в массиве все отрицательные значения и заменить их на значения 0.
+//После этого выведет на экран все элементы массива.
+
+// const values = [10, 20, -2, 6, 11, -10, 125, -3, 8, 0, 3];
+ 
+// for (let i = 0; i < values.length; i += 1){
+//   if (values[i] < 0) {
+//     values[i] = 0
+//   }
+// }
+
+// for (value of values) {
+//   console.log(value)
+// }
+
+
+//9.04
+//Дано массив. Создайте на основе значений этого массива два новых массива. В один массив поместите все четные значения, а во второй все нечетные.
+//Выведите на экран значения, которые вошли в первый массив и во второй массив.
+
+
+
+
+//9.08
+//Дан массив целых чисел. Проверьте есть ли в нем одинаковые элементы. Если есть выведите их на экран.
+
+        let values = [10, 20, 4, 6, 11, 9, 125, 10, 8, 0, 3, 5, 89, 12, 46, 77, 3];
+
+        for (let i = 0; i < values.length - 1; i++) {
+
+            const current = values[i];
+
+            // k = i - так как нам не нужно проверять предыдущие значения, то вложенный цикл проверяет текущее значение current с последующими
+            // Последний элемент уже сравнивать не нужно, так как предпоследний элемент будет проверен на равенство с последним.
+            // Поэтому первый цикл на 16 строке запускается на одну итерацию меньше, чем размер массива.
+            for (let k = i + 1; k < values.length; k++) {
+                const element = values[k];
+
+                if (current == element) {
+                    console.log(`Значение ${current} повторяется`);
+                    break;
+                }
+            }
+        }
+    
